@@ -9,7 +9,6 @@ C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Debug\net5.0\ref
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Debug\net5.0\TechFabricSln.pdb
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Debug\net5.0\TechFabricSln.Views.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Debug\net5.0\TechFabricSln.Views.pdb
-C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Debug\net5.0\TechFabricSln.csproj.AssemblyReference.cache
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Debug\net5.0\TechFabricSln.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Debug\net5.0\TechFabricSln.AssemblyInfoInputs.cache
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Debug\net5.0\TechFabricSln.AssemblyInfo.cs
