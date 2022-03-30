@@ -1,29 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj": {}
+    "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj",
         "projectName": "TechFabricSln",
-        "projectPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj",
-        "packagesPath": "C:\\Users\\Vernon Naidoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\src\\TechFabricSln\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Vernon Naidoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -34,7 +41,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -53,33 +61,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj",
         "projectName": "TestFabricSln.Test",
-        "projectPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj",
-        "packagesPath": "C:\\Users\\Vernon Naidoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\test\\TestFabricSln.Test\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Vernon Naidoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj": {
-                "projectPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj"
+              "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj"
               }
             }
           }
@@ -91,7 +106,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -121,7 +137,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
