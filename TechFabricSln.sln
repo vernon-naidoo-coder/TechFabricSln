@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0346FC0B-A36A-4933-9C6E-51F5B82C4CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechFabricSln", "src\TechFabricSln\TechFabricSln.csproj", "{4A715260-4C43-4E57-A61E-5AB34845D5B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechFabricSln", "src\TechFabricSln\TechFabricSln.csproj", "{4A715260-4C43-4E57-A61E-5AB34845D5B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{64143BD3-D8D2-4470-A5A9-AF502FC2D49A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFabricSln.Test", "test\TestFabricSln.Test\TestFabricSln.Test.csproj", "{FAA234DF-285F-4967-BE3A-56CB89F48F0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFabricSln.Test", "test\TestFabricSln.Test\TestFabricSln.Test.csproj", "{FAA234DF-285F-4967-BE3A-56CB89F48F0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,12 +20,9 @@ Global
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Debug|x64.Build.0 = Debug|Any CPU
 		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -36,8 +33,8 @@ Global
 		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Release|x64.Build.0 = Release|Any CPU
 		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Release|x86.ActiveCfg = Release|Any CPU
 		{4A715260-4C43-4E57-A61E-5AB34845D5B5}.Release|x86.Build.0 = Release|Any CPU
-		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Debug|x64.Build.0 = Debug|Any CPU
 		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -49,8 +46,14 @@ Global
 		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Release|x86.ActiveCfg = Release|Any CPU
 		{FAA234DF-285F-4967-BE3A-56CB89F48F0F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4A715260-4C43-4E57-A61E-5AB34845D5B5} = {0346FC0B-A36A-4933-9C6E-51F5B82C4CA7}
 		{FAA234DF-285F-4967-BE3A-56CB89F48F0F} = {64143BD3-D8D2-4470-A5A9-AF502FC2D49A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B70C00A2-E9FA-4455-9268-01B3409A6A3E}
 	EndGlobalSection
 EndGlobal
