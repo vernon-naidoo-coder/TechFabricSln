@@ -113,9 +113,25 @@
               "target": "Package",
               "version": "[16.2.0, )"
             },
+            "Microsoft.TestPlatform.TestHost": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[3.13.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[100.0.4896.6000, )"
             },
             "nunit": {
               "target": "Package",
