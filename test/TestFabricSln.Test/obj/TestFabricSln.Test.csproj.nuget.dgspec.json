@@ -1,0 +1,129 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj",
+        "projectName": "TechFabricSln",
+        "projectPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj",
+        "packagesPath": "C:\\Users\\Vernon Naidoo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Vernon Naidoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj",
+        "projectName": "TestFabricSln.Test",
+        "projectPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj",
+        "packagesPath": "C:\\Users\\Vernon Naidoo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\test\\TestFabricSln.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Vernon Naidoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj": {
+                "projectPath": "C:\\Users\\Vernon Naidoo\\OneDrive - Altron Group\\Documents\\Projects\\TechFabricSln\\src\\TechFabricSln\\TechFabricSln.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
