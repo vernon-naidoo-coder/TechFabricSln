@@ -110,3 +110,8 @@ C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\ne
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\NuGet.Frameworks.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\WebDriver.Support.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\WebDriver.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\AngleSharp.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\WebDriverManager.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\Selenium.WebDriver.WaitExtensions.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\SeleniumExtras.WaitHelpers.dll

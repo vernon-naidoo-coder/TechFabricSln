@@ -37,3 +37,6 @@ C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\r
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.pdb
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.csproj.CopyComplete
+C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\AngleSharp.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\WebDriverManager.dll
