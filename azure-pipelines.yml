@@ -13,19 +13,23 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  chromeVersion: '99.0.4844.74'
 
 steps:
 
-- pwsh: |
-   echo "##vso[task.prependpath]$env:CHROMEWEBDRIVER"
-  displayName: Adds ChromeWebDriver for Selenium to PATH 
+# - pwsh: |
+#    echo "##vso[task.prependpath]$env:CHROMEWEBDRIVER"
+#   displayName: Adds ChromeWebDriver for Selenium to PATH 
   
 - task: PowerShell@2
   displayName: 'We want to know the Chrome version installed on this darned machine'
   inputs:
     targetType: 'inline'
     script: '(Get-Item "C:\Program Files\Google\Chrome\Application\chrome.exe").VersionInfo'
-    
+
+- script: webdrivermanager chrome:$(chromeVersion) --linkpath AUTO
+  displayName: 'Manage Chrome webdriver version'
+
 - task: UseDotNet@2
   displayName: 'Use .NET Core sdk 5.0.100'
   inputs:
