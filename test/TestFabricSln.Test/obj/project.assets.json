@@ -457,7 +457,7 @@
           "lib/net5.0/WebDriver.dll": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/100.0.4896.6000": {
+      "Selenium.WebDriver.ChromeDriver/99.0.4844.5100": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
@@ -2149,10 +2149,10 @@
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/100.0.4896.6000": {
-      "sha512": "ttUzQ+lgWSifCMhw1MGUf4eFt9Vh88O1mua58huh5zLMZdqa/Wrh+lQGZnZrcvoifq85fWx7ESlbl57iPDaJ+w==",
+    "Selenium.WebDriver.ChromeDriver/99.0.4844.5100": {
+      "sha512": "021uEuHHgaZ9X2oSCaClBun+azybXg5lw/Pq79fc3D98X0oEpHPuXRTRthxzmqTwH6CGnRNfTvHMZ9xdvHDLzQ==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/100.0.4896.6000",
+      "path": "selenium.webdriver.chromedriver/99.0.4844.5100",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2163,7 +2163,7 @@
         "driver/mac64/chromedriver",
         "driver/win32/chromedriver.exe",
         "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.100.0.4896.6000.nupkg.sha512",
+        "selenium.webdriver.chromedriver.99.0.4844.5100.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
@@ -4611,7 +4611,7 @@
       "NUnit3TestAdapter >= 3.13.0",
       "Selenium.Support >= 4.1.0",
       "Selenium.WebDriver >= 4.1.0",
-      "Selenium.WebDriver.ChromeDriver >= 100.0.4896.6000",
+      "Selenium.WebDriver.ChromeDriver >= 99.0.4844.74",
       "Selenium.WebDriver.WaitExtensions >= 2.0.0",
       "SeleniumExtras.WaitHelpers >= 1.0.2",
       "TechFabricSln >= 1.0.0",
@@ -4688,7 +4688,7 @@
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[100.0.4896.6000, )"
+            "version": "[99.0.4844.74, )"
           },
           "Selenium.WebDriver.WaitExtensions": {
             "target": "Package",
@@ -4721,5 +4721,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "TestFabricSln.Test depends on Selenium.WebDriver.ChromeDriver (>= 99.0.4844.74) but Selenium.WebDriver.ChromeDriver 99.0.4844.74 was not found. An approximate best match of Selenium.WebDriver.ChromeDriver 99.0.4844.5100 was resolved.",
+      "libraryId": "Selenium.WebDriver.ChromeDriver",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
