@@ -16,11 +16,16 @@ variables:
 
 steps:
 
-- task: CmdLine@2
-  displayName: 'Get Chrome Version'
+- pwsh: |
+   echo "##vso[task.prependpath]$env:CHROMEWEBDRIVER"
+  displayName: Adds ChromeWebDriver for Selenium to PATH 
+  
+- task: PowerShell@2
+  displayName: 'We want to know the Chrome version installed on this darned machine'
   inputs:
-    script: 'wmic datafile where name="C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe" get Version /value'
-
+    targetType: 'inline'
+    script: '(Get-Item "C:\Program Files\Google\Chrome\Application\chrome.exe").VersionInfo'
+    
 - task: UseDotNet@2
   displayName: 'Use .NET Core sdk 5.0.100'
   inputs:
