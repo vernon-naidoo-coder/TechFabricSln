@@ -25,7 +25,7 @@ steps:
 
 - task: NuGetToolInstaller@1
   inputs:
-    versionSpec: '5.11.1'
+    versionSpec: '6.1.0'
     checkLatest: true
 
 - task: NuGetCommand@2
