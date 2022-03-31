@@ -7,19 +7,28 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'windows-2019'
 
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  chromeVersion: '99.0.4844.74'
 
 steps:
-- task: NuGetToolInstaller@1
 
-- task: NuGetCommand@2
+# - pwsh: |
+#    echo "##vso[task.prependpath]$env:CHROMEWEBDRIVER"
+#   displayName: Adds ChromeWebDriver for Selenium to PATH 
+  
+- task: PowerShell@2
+  displayName: 'We want to know the Chrome version installed on this darned machine'
   inputs:
-    restoreSolution: '$(solution)'
+    targetType: 'inline'
+    script: '(Get-Item "C:\Program Files\Google\Chrome\Application\chrome.exe").VersionInfo'
+
+- script: webdrivermanager chrome:$(chromeVersion) --linkpath AUTO
+  displayName: 'Manage Chrome webdriver version'
 
 - task: UseDotNet@2
   displayName: 'Use .NET Core sdk 5.0.100'
@@ -28,31 +37,51 @@ steps:
     version: '5.0.100'
     includePreviewVersions: true
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet restore'
+- task: NuGetToolInstaller@1
   inputs:
-    command: restore
-    projects: '**/*.csproj'
-    # arguments: '--configuration $(buildConfiguration)'
+    versionSpec: '6.1.0'
+    checkLatest: true
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet build'
+- task: NuGetCommand@2
   inputs:
-    command: 'build'
-    projects: '**/*.sln'
-
-# - task: DotNetCoreCLI@2
-#   displayName: 'dotnet test'
-#   inputs:
-#     solution: '$(solution)'
-#     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
-#     platform: '$(buildPlatform)'
-#     configuration: '$(buildConfiguration)'
+    command: 'restore'
+    restoreSolution: '**/*Test/*.csproj'
+    feedsToUse: 'select'
+    noCache: true
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet test'
   inputs:
     command: 'test'
     projects: '**/*Test/*.csproj'
-    testRunTitle: 'Generic Tests'
+    #arguments: '--configuration $(buildConfiguration) --filter TestCategory=UnitTest'
 
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build test'
+  inputs:
+    projects: '**/*Test/*.csproj'
+    arguments: '--runtime win-x64'
+  continueOnError: true
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+  inputs:
+    command: publish
+    publishWebProjects: false
+    projects: 'src/TechFabricSln/TechFabricSln.csproj'
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/TechFabricSln/'
+    zipAfterPublish: false
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish test --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: 'test/TechFabricSln.Test/TechFabricSln.Test.csproj'
+    arguments: '-p:PublishChromeDriver=true --runtime win-x64 --output $(Build.ArtifactStagingDirectory)/TechFabricSln.Test/'
+    zipAfterPublish: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifacts'
