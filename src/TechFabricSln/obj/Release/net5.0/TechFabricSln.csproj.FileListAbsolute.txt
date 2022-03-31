@@ -9,6 +9,9 @@ C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\r
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\TechFabricSln.pdb
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\TechFabricSln.Views.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\TechFabricSln.Views.pdb
+C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\AngleSharp.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\WebDriverManager.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.AssemblyInfoInputs.cache
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.AssemblyInfo.cs
@@ -32,11 +35,8 @@ C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\R
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.RazorTargetAssemblyInfo.cache
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.RazorTargetAssemblyInfo.cs
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.Views.pdb
+C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.csproj.CopyComplete
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\ref\TechFabricSln.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.pdb
 C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.genruntimeconfig.cache
-C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\obj\Release\net5.0\TechFabricSln.csproj.CopyComplete
-C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\AngleSharp.dll
-C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
-C:\Users\Admin\Source\Repos\TechFabricSln\src\TechFabricSln\bin\Release\net5.0\WebDriverManager.dll
