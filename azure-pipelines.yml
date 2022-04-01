@@ -61,14 +61,22 @@ steps:
     arguments: '--runtime win-x64'
   continueOnError: true
 
+# - task: DotNetCoreCLI@2
+#   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+#   inputs:
+#     command: publish
+#     publishWebProjects: false
+#     projects: 'src/TechFabricSln/TechFabricSln.csproj'
+#     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
+#     zipAfterPublish: false
+
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
   inputs:
-    command: publish
+    command: 'publish'
     publishWebProjects: false
     projects: 'src/TechFabricSln/TechFabricSln.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
-    modifyOutputPath: true
     zipAfterPublish: false
 
 - task: DotNetCoreCLI@2
