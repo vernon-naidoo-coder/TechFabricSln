@@ -27,48 +27,29 @@ steps:
     targetType: 'inline'
     script: '(Get-Item "C:\Program Files\Google\Chrome\Application\chrome.exe").VersionInfo'
 
-# - task: UseDotNet@2
-#   displayName: 'Use .NET Core sdk 5.0.100'
-#   inputs:
-#     packageType: 'sdk'
-#     version: '5.0.100'
-#     includePreviewVersions: false
+- task: UseDotNet@2
+  displayName: 'Use .NET Core sdk 5.0.100'
+  inputs:
+    packageType: 'sdk'
+    version: '5.0.100'
+    includePreviewVersions: false
 
-# - task: NuGetToolInstaller@1
-#   inputs:
-#     versionSpec: '5.8'
-#     checkLatest: true
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: '5.8'
+    checkLatest: true
 
-# - task: NuGetCommand@2
-#   inputs:
-#     command: 'restore'
-#     restoreSolution: '**/*Test/*.csproj'
-#     feedsToUse: 'select'
-#     noCache: false
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*Test/*.csproj'
+    feedsToUse: 'select'
+    noCache: true
 
-- task: UseDotNet@2 
-  inputs: 
-    packageType: 'sdk' 
-    version: '3.0.x' 
-    includePreviewVersions: true 
-
-- task: NuGetToolInstaller@1 
-  inputs: 
-    versionSpec: '5.1.0' 
-    checkLatest: true 
-
-- task: NuGetCommand@2 
-  inputs: 
-    command: 'restore' 
-    restoreSolution: '**/*Test/*.csproj' 
-    feedsToUse: 'select' 
-    noCache: true 
-
-- task: DotNetCoreCLI@2 
-  inputs: 
-    command: test 
-    projects: '**/*Test/*.csproj' 
-    arguments: '--configuration $(buildConfiguration) --filter TestCategory=UnitTest'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/*Test/*.csproj'
 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
@@ -86,22 +67,13 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-  inputs:
-    command: build
-    publishWebProjects: false
-    projects: 'src/TechFabricSln/TechFabricSln.csproj'
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
-    zipAfterPublish: false
-
 # - task: DotNetCoreCLI@2
 #   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
 #   inputs:
-#     command: 'publish'
+#     command: build
 #     publishWebProjects: false
 #     projects: 'src/TechFabricSln/TechFabricSln.csproj'
-#     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/TechFabricSln'
+#     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
 #     zipAfterPublish: false
 
 - task: DotNetCoreCLI@2
