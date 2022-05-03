@@ -1,4 +1,3 @@
-C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\chromedriver.exe
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\testhost.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\TechFabricSln.Views.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\TechFabricSln.Views.pdb
@@ -13,6 +12,7 @@ C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\ne
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\nunit.engine.netstandard.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\testhost.exe
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\chromedriver.exe
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\TestFabricSln.Test.deps.json
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\TestFabricSln.Test.runtimeconfig.json
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Release\net5.0\TestFabricSln.Test.runtimeconfig.dev.json

@@ -105,3 +105,13 @@ C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\obj\Debug\net5
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\obj\Debug\net5.0\ref\TestFabricSln.Test.dll
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\obj\Debug\net5.0\TestFabricSln.Test.pdb
 C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\obj\Debug\net5.0\TestFabricSln.Test.genruntimeconfig.cache
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\testhost.exe
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\chromedriver.exe
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\AngleSharp.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\NuGet.Frameworks.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\WebDriver.Support.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\WebDriver.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\Selenium.WebDriver.WaitExtensions.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\SeleniumExtras.WaitHelpers.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Source\Repos\TechFabricSln\test\TestFabricSln.Test\bin\Debug\net5.0\WebDriverManager.dll
