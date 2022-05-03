@@ -137,7 +137,7 @@
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[99.0.4844.74, )"
+              "version": "[100.0.4896.75, )"
             },
             "Selenium.WebDriver.WaitExtensions": {
               "target": "Package",

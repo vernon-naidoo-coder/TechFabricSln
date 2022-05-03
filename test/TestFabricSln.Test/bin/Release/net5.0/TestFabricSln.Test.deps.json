@@ -13,7 +13,7 @@
           "NUnit3TestAdapter": "3.13.0",
           "Selenium.Support": "4.1.0",
           "Selenium.WebDriver": "4.1.0",
-          "Selenium.WebDriver.ChromeDriver": "99.0.4844.5100",
+          "Selenium.WebDriver.ChromeDriver": "100.0.4896.2000",
           "Selenium.WebDriver.WaitExtensions": "2.0.0",
           "SeleniumExtras.WaitHelpers": "1.0.2",
           "TechFabricSln": "1.0.0",
@@ -402,7 +402,7 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/99.0.4844.5100": {},
+      "Selenium.WebDriver.ChromeDriver/100.0.4896.2000": {},
       "Selenium.WebDriver.WaitExtensions/2.0.0": {
         "dependencies": {
           "Selenium.Support": "4.1.0",
@@ -956,12 +956,12 @@
       "path": "selenium.webdriver/4.1.0",
       "hashPath": "selenium.webdriver.4.1.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/99.0.4844.5100": {
+    "Selenium.WebDriver.ChromeDriver/100.0.4896.2000": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-021uEuHHgaZ9X2oSCaClBun+azybXg5lw/Pq79fc3D98X0oEpHPuXRTRthxzmqTwH6CGnRNfTvHMZ9xdvHDLzQ==",
-      "path": "selenium.webdriver.chromedriver/99.0.4844.5100",
-      "hashPath": "selenium.webdriver.chromedriver.99.0.4844.5100.nupkg.sha512"
+      "sha512": "sha512-5FnNwsh/XjlIIpmVCnKNyrFCZCCw8hjzek0Wifuumhz+Xy5AifFVMPYJ/myP6SZfylkXhQFlDM2S5M9EHHvmRQ==",
+      "path": "selenium.webdriver.chromedriver/100.0.4896.2000",
+      "hashPath": "selenium.webdriver.chromedriver.100.0.4896.2000.nupkg.sha512"
     },
     "Selenium.WebDriver.WaitExtensions/2.0.0": {
       "type": "package",

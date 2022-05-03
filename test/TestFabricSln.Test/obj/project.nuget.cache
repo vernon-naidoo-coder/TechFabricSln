@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FVj6ubxXJjSWtiKjklCPBTCfM2VmprlsPIP4+K79p3YP+fDfWhxYFZE4jjoMxGyuLDRXJI2sjw9QFHkb8IBoXQ==",
+  "dgSpecHash": "lwAFYZOSNTw8ALwMT+QefVWI0KkV3xGltCoXUUA74yBo1HoCWwA09XUNgJ0ohkteTCBOzuJ0VJNgZk+9ihxyww==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\TechFabricSln\\test\\TestFabricSln.Test\\TestFabricSln.Test.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\selenium.support\\4.1.0\\selenium.support.4.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\selenium.webdriver.chromedriver\\99.0.4844.5100\\selenium.webdriver.chromedriver.99.0.4844.5100.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\selenium.webdriver.chromedriver\\100.0.4896.2000\\selenium.webdriver.chromedriver.100.0.4896.2000.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\selenium.webdriver.waitextensions\\2.0.0\\selenium.webdriver.waitextensions.2.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512",
@@ -76,7 +76,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "TestFabricSln.Test depends on Selenium.WebDriver.ChromeDriver (>= 99.0.4844.74) but Selenium.WebDriver.ChromeDriver 99.0.4844.74 was not found. An approximate best match of Selenium.WebDriver.ChromeDriver 99.0.4844.5100 was resolved.",
+      "message": "TestFabricSln.Test depends on Selenium.WebDriver.ChromeDriver (>= 100.0.4896.75) but Selenium.WebDriver.ChromeDriver 100.0.4896.75 was not found. An approximate best match of Selenium.WebDriver.ChromeDriver 100.0.4896.2000 was resolved.",
       "libraryId": "Selenium.WebDriver.ChromeDriver",
       "targetGraphs": [
         "net5.0"
