@@ -70,7 +70,7 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
   inputs:
-    command: publish
+    command: build
     publishWebProjects: false
     projects: 'src/TechFabricSln/TechFabricSln.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
