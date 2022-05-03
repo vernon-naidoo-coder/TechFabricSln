@@ -61,7 +61,11 @@ steps:
     arguments: '--runtime win-x64'
   continueOnError: true
 
-
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
@@ -69,7 +73,7 @@ steps:
     command: publish
     publishWebProjects: false
     projects: 'src/TechFabricSln/TechFabricSln.csproj'
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/TechFabricSln'
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
     zipAfterPublish: false
 
 # - task: DotNetCoreCLI@2
@@ -87,7 +91,7 @@ steps:
     command: 'publish'
     publishWebProjects: false
     projects: 'test/TechFabricSln.Test/TechFabricSln.Test.csproj'
-    arguments: '-p:PublishChromeDriver=true --runtime win-x64 --output $(Build.ArtifactStagingDirectory)/TechFabricSln.Test'
+    arguments: '-p:PublishChromeDriver=true --runtime win-x64 --output $(Build.ArtifactStagingDirectory)\TechFabricSln.Test'
     modifyOutputPath: true
     zipAfterPublish: false
 
