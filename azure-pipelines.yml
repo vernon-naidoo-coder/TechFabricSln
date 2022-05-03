@@ -32,7 +32,7 @@ steps:
   inputs:
     packageType: 'sdk'
     version: '5.0.100'
-    includePreviewVersions: true
+    includePreviewVersions: false
 
 - task: NuGetToolInstaller@1
   inputs:
