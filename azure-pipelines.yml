@@ -78,16 +78,23 @@ steps:
     ArtifactName: 'TechFabricSln'
     publishLocation: 'Container'
 
-- task: DotNetCoreCLI@2
-  displayName: '09. Publish Test artifacts'
-  # displayName: 'dotnet publish test --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+- task: PublishBuildArtifacts@1
+  displayName: '09. Publish Test Build artifacts'
   inputs:
-    command: 'publish'
-    publishWebProjects: false
-    projects: 'test\TestFabricSln.Test\TestFabricSln.Test.csproj'
-    arguments: '-p:PublishChromeDriver=true --runtime win-x64 --output $(Build.ArtifactStagingDirectory)\TestFabricSln.Test'
-    modifyOutputPath: true
-    zipAfterPublish: false
+    PathtoPublish: 'D:\a\1\s\test\TestFabricSln.Test\bin\Release\net5.0\'
+    ArtifactName: 'TestFabricSln'
+    publishLocation: 'Container'
+
+# - task: DotNetCoreCLI@2
+#   displayName: '09. Publish Test artifacts'
+#   # displayName: 'dotnet publish test --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+#   inputs:
+#     command: 'publish'
+#     publishWebProjects: false
+#     projects: 'test\TestFabricSln.Test\TestFabricSln.Test.csproj'
+#     arguments: '-p:PublishChromeDriver=true --runtime win-x64 --output $(Build.ArtifactStagingDirectory)\TestFabricSln.Test'
+#     modifyOutputPath: true
+#     zipAfterPublish: false
 
 # - task: PublishBuildArtifacts@1
 #   displayName: '10. Publish artifacts'
