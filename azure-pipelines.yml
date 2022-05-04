@@ -45,7 +45,7 @@ steps:
     noCache: true
 
 - task: DotNetCoreCLI@2
-  displayName: '05. Execute the unit tests in the given solution.'
+  displayName: '05. Execute the tests in the test solution.'
   inputs:
     command: 'test'
     projects: '**/*Test/*.csproj'
@@ -69,18 +69,10 @@ steps:
 #     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
 #     zipAfterPublish: false
 
-# - task: PublishBuildArtifacts@1
-#   displayName: '08. Publish Build artifacts'
-#   inputs:
-#     PathtoPublish: 'D:\a\1\'
-#     ArtifactName: 'TechFabricSln'
-#     publishLocation: 'Container'
-
 - task: PublishBuildArtifacts@1
   displayName: '08. Publish Build artifacts'
   inputs:
-    # PathtoPublish: 'D:\a\1\'
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)\TechFabricSln'
+    PathtoPublish: 'D:\a\1\'
     ArtifactName: 'TechFabricSln'
     publishLocation: 'Container'
 
