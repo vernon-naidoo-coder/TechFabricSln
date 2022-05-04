@@ -16,30 +16,28 @@ variables:
   chromeVersion: '100.0.4896.75'
 
 steps:
-
-# - pwsh: |
-#    echo "##vso[task.prependpath]$env:CHROMEWEBDRIVER"
-#   displayName: Adds ChromeWebDriver for Selenium to PATH 
   
 - task: PowerShell@2
-  displayName: 'We want to know the Chrome version installed on this darned machine'
+  displayName: '01. Acquire the Chrome version installed on this darned machine'
   inputs:
     targetType: 'inline'
     script: '(Get-Item "C:\Program Files\Google\Chrome\Application\chrome.exe").VersionInfo'
 
 - task: UseDotNet@2
-  displayName: 'Use .NET Core sdk 5.0.100'
+  displayName: '02. Acquire .NET Core sdk 5.0.100'
   inputs:
     packageType: 'sdk'
     version: '5.0.100'
     includePreviewVersions: false
 
 - task: NuGetToolInstaller@1
+  displayName: '03. Acquire NuGet 5.8'
   inputs:
     versionSpec: '5.8'
     checkLatest: true
 
 - task: NuGetCommand@2
+  displayName: '04. Restore NuGet packages for specified project'
   inputs:
     command: 'restore'
     restoreSolution: '**/*Test/*.csproj'
@@ -47,15 +45,16 @@ steps:
     noCache: true
 
 - task: DotNetCoreCLI@2
+  displayName: '05. Execute the unit tests in the given solution.'
   inputs:
     command: 'test'
     projects: '**/*Test/*.csproj'
 
 - script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+  displayName: '6. Build $(buildConfiguration) version of project'
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet build test'
+  displayName: '07. Build Test project'
   inputs:
     projects: '**/*Test/*.csproj'
     arguments: '--runtime win-x64'
@@ -71,13 +70,15 @@ steps:
 #     zipAfterPublish: false
 
 - task: PublishBuildArtifacts@1
+  displayName: '08. Publish Build artifacts'
   inputs:
     PathtoPublish: 'D:\a\1\'
-    ArtifactName: 'drop'
+    ArtifactName: 'TechFabricSln'
     publishLocation: 'Container'
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet publish test --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+  displayName: '09. Publish Test artifacts'
+  # displayName: 'dotnet publish test --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
   inputs:
     command: 'publish'
     publishWebProjects: false
@@ -87,4 +88,4 @@ steps:
     zipAfterPublish: false
 
 - task: PublishBuildArtifacts@1
-  displayName: 'publish artifacts'
+  displayName: '10. Publish artifacts'
