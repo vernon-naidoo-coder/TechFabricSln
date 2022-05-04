@@ -74,14 +74,14 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: '08. Publish Build artifacts'
   inputs:
-    PathtoPublish: 'D:\a\1\s\src\TechFabricSln\bin\Release\net5.0\'
+    PathtoPublish: 'D:\a\1\s\src\TechFabricSln\'
     ArtifactName: 'TechFabricSln'
     publishLocation: 'Container'
 
 - task: PublishBuildArtifacts@1
   displayName: '09. Publish Test Build artifacts'
   inputs:
-    PathtoPublish: 'D:\a\1\s\test\TestFabricSln.Test\bin\Release\net5.0\'
+    PathtoPublish: 'D:\a\1\s\test\TestFabricSln.Test\'
     ArtifactName: 'TestFabricSln'
     publishLocation: 'Container'
 
