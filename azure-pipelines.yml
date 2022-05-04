@@ -51,7 +51,7 @@ steps:
     projects: '**/*Test/*.csproj'
 
 - script: dotnet build --configuration $(buildConfiguration)
-  displayName: '6. Build $(buildConfiguration) version of project'
+  displayName: '06. Build $(buildConfiguration) version of project'
 
 - task: DotNetCoreCLI@2
   displayName: '07. Build Test project'
@@ -69,10 +69,18 @@ steps:
 #     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)\TechFabricSln'
 #     zipAfterPublish: false
 
+# - task: PublishBuildArtifacts@1
+#   displayName: '08. Publish Build artifacts'
+#   inputs:
+#     PathtoPublish: 'D:\a\1\'
+#     ArtifactName: 'TechFabricSln'
+#     publishLocation: 'Container'
+
 - task: PublishBuildArtifacts@1
   displayName: '08. Publish Build artifacts'
   inputs:
-    PathtoPublish: 'D:\a\1\'
+    # PathtoPublish: 'D:\a\1\'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\TechFabricSln'
     ArtifactName: 'TechFabricSln'
     publishLocation: 'Container'
 
@@ -87,5 +95,5 @@ steps:
     modifyOutputPath: true
     zipAfterPublish: false
 
-- task: PublishBuildArtifacts@1
-  displayName: '10. Publish artifacts'
+# - task: PublishBuildArtifacts@1
+#   displayName: '10. Publish artifacts'
